@@ -1,0 +1,99 @@
+.employee-registration-form-wrapper {
+    padding: 10rem 13rem;
+    border-radius: 35px;
+    background: #fff;
+    box-shadow: 0px 4px 19px 0px rgba(210, 209, 209, 0.25);
+    text-align: left;
+}
+
+.dual-input-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 25px 0;
+}
+
+.form-label {
+    color: #263857;
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.form-dropdown-wrapper {
+    border-radius: 16px;
+    background: #f8fbff;
+}
+.form-dropdown {
+    border-radius: 16px;
+    background: #f8fbff;
+    width: 95%;
+    border: none;
+    outline: none;
+    height: 54px;
+    padding: 0 24px;
+    font-weight: 500;
+    cursor: pointer;
+    color: #7e98ba;
+}
+.form-input {
+    border-radius: 16px;
+    background: #f8fbff;
+    border: none;
+    outline: none;
+    height: 54px;
+    padding: 0 24px;
+    font-weight: 500;
+}
+.form-input[type="date"] {
+    color: #7e98ba;
+}
+.form-input::placeholder {
+    color: #7e98ba;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.btn-wrapper {
+    margin-top: 4rem;
+}
+
+.cancel-btn,
+.save-btn {
+    height: 65px;
+    border-radius: 13px;
+    color: #263857;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.cancel-btn {
+    border: none;
+    outline: none;
+    background: #e3e3e3;
+}
+.save-btn {
+    border: 2px solid #142a51;
+    background: #fff;
+}
+
+.quill {
+    border-radius: 16px;
+    background: #e9f2ff;
+}
+
+.ql-toolbar.ql-snow {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-color: #fff;
+}
+
+.ql-container.ql-snow {
+    border: none;
+    min-height: 10rem;
+}
