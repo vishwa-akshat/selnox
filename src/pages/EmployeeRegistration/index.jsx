@@ -1,7 +1,7 @@
 import EmployeeRegistrationForm from "../../components/EmployeeRegistrayionForm";
-import "./App.css";
+import "./styles.css";
 
-function App() {
+function EmployeeRegistration() {
     return (
         <section className="employee-container">
             <h1 className="employee-registration-heading">
@@ -12,4 +12,4 @@ function App() {
     );
 }
 
-export default App;
+export default EmployeeRegistration;
