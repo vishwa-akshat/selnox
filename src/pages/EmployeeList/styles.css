@@ -1,0 +1,13 @@
+.employee-list-container {
+    text-align: left;
+}
+
+.employee-list-title {
+}
+
+.list-wrapper {
+    padding: 4rem 0;
+    border-radius: 35px;
+    background: #fff;
+    box-shadow: 0px 4px 19px 0px rgba(210, 209, 209, 0.25);
+}
