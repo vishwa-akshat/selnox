@@ -15,7 +15,8 @@ export default function ListMoreOption({
     employeeDetails,
 }) {
     let navigate = useNavigate();
-    const { setCurrentEmployee } = useAppStore();
+    const { setCurrentEmployee, deleteEmployee } = useAppStore();
+
     const options = [
         {
             id: 1,
@@ -35,6 +36,8 @@ export default function ListMoreOption({
             icon: editIcon,
             handleClick: () => {
                 setIsMenuOpen(false);
+                setCurrentEmployee(employeeDetails);
+                navigate("/edit");
             },
             iconWidth: 12,
             iconHeight: 12,
@@ -45,6 +48,7 @@ export default function ListMoreOption({
             icon: trashIcon,
             handleClick: () => {
                 setIsMenuOpen(false);
+                deleteEmployee(employeeDetails.id);
             },
             iconWidth: 12,
             iconHeight: 15,

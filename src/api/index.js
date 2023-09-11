@@ -11,3 +11,35 @@ export const fetchEmployeeData = async () => {
         throw error;
     }
 };
+
+export const postEmployee = async (details) => {
+    try {
+        const response = await axios.post(
+            `${API_BASE_URL}/Add-Employee`,
+            details
+        );
+        return response.data;
+    } catch (error) {
+        throw error;
+    }
+};
+
+export const updateEmployee = async (details) => {
+    try {
+        const response = await axios.patch(
+            `${API_BASE_URL}/update-Employee/${details.id}`,
+            details
+        );
+        return response.data;
+    } catch (error) {
+        throw error;
+    }
+};
+
+export const deleteEmployee = async (id) => {
+    try {
+        await axios.delete(`${API_BASE_URL}/delete-Employee/${id}`);
+    } catch (error) {
+        throw error;
+    }
+};

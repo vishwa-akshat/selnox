@@ -1,5 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 
 import EmployeeDetails from "../../components/EmployeeDetails";
 
@@ -17,6 +18,7 @@ export default function EmployeeList() {
     return (
         <section className="employee-list-container">
             <h1 className="heading">Employee List</h1>
+            <Link to="/">Add Employee</Link>
             <div className="list-wrapper">
                 <EmployeeDetails />
             </div>
